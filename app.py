@@ -18,3 +18,5 @@ prompt = st.text_input('Plug in your prompt here')
 if prompt:
     results = xata.data().search_branch({"query": prompt})
     st.write(results)
+
+    
