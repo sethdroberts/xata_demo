@@ -6,7 +6,7 @@ from xata.client import XataClient
 os.environ['XATA_API_KEY'] = st.secrets['XATA_API_KEY']
 api_key = os.environ['XATA_API_KEY']
 
-os.environ['DEMO_DB_URL'] = st.secrets['DEMO_DB_URL']
+os.environ['EGW_DB_URL'] = st.secrets['EGW_DB_URL']
 db_url = os.environ['EGW_DB_URL']
 
 xata = XataClient(api_key=api_key, db_url=db_url)
