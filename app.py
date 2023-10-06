@@ -3,12 +3,11 @@ import streamlit as st
 from xata.client import XataClient
  
 #Authenticates Xata. Make sure to unhide Streamlit secrets access when deploying
-#os.environ['XATA_API_KEY'] = st.secrets['XATA_API_KEY']
+os.environ['XATA_API_KEY'] = st.secrets['XATA_API_KEY']
 api_key = os.environ['XATA_API_KEY']
 
-#os.environ['DEMO_DB_URL'] = st.secrets['DEMO_DB_URL']
-db_url = os.environ['DEMO_DB_URL']
-###MAKE SURE TO CHANGE THE DB URL!!
+os.environ['DEMO_DB_URL'] = st.secrets['DEMO_DB_URL']
+db_url = os.environ['EGW_DB_URL']
 
 xata = XataClient(api_key=api_key, db_url=db_url)
 
