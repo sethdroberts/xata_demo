@@ -27,3 +27,5 @@ For this setup, here's the steps I'm taking next:
   <li>Build a web scraper to scrape entire EGW repo into a new DB</li>
   <li>Duplicate this app and use the new DB for all search queries</li>
 </ol>
+
+Note: When creating web scraper, make sure to omit forewards, prefaces, etc.
