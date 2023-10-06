@@ -18,10 +18,7 @@ This also eliminates the need to set up embeddings, cause I can do it all native
 
 For this setup, here's the steps I'm taking next:
 <ol>
-  <li>Build a new database in Xata with desired metadata</li>
-  <li>Test sending data from app to Xata</li>
-  <li>Build a scraper to scrape STC into the database</li>
-  <li>Build and test the DB search functions with this setup</li>
+  <li>Build and test the DB search functions with STC added to DB</li>
   <li>Build the "ask" functionality to query OpenAI effectively</li>
   <li>Once working successfully, deploy into production</li>
   <li>Build a web scraper to scrape entire EGW repo into a new DB</li>
@@ -29,3 +26,5 @@ For this setup, here's the steps I'm taking next:
 </ol>
 
 Note: When creating web scraper, make sure to omit forewards, prefaces, etc.
+Also, make sure to only scrape books published prior to 1915, clearly in public domain.
+Also note the above + explain this is not authorized or official.
