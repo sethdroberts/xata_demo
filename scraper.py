@@ -67,5 +67,5 @@ def toc_to_xata(url):
 #STC Table of Contents URL
 url = 'https://m.egwwritings.org/en/book/108.21/toc'
 
-#Calling the function
-toc_to_xata(url)
+#Calling the function - disabled to avoid accidents
+#toc_to_xata(url)
