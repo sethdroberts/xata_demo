@@ -1,6 +1,8 @@
 # Ask Ellen White
 A generative AI search engine based on the full text of the Conflict of the Ages series along with Steps to Christ.
 
+<img width="794" alt="IMG_7661" src="https://github.com/sethdroberts/xata_demo/assets/22066092/5ce422b8-499f-465f-b2dc-4bb17714c2b7">
+
 ## How Does the App Work?
 The front-end of the app (the text, prompt bar, etc.) is built in Python using Streamlit. I used a Python-based web scraper equipped with Beautiful Soup to load a Xata serverless database with the following schema for each paragraph of the COTA series and Steps to Christ: book name, paragraph content, paragraph reference, & chapter url. I then used Xata's ask functionality to build the generative AI component. When a prompt is submitted, Xata completes a full-text search of the database (filtered to search paragraph content only), identifies the highest-scoring paragraphs, and sends them to OpenAI via the Xata API as context for the prompt. OpenAI's response includes the database ID's for each paragraph referenced. I display the generated response and use some Python combined with Streamlit's magic to display the referenced paragraphs, along with links to the full quote context.
 
